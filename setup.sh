@@ -22,4 +22,4 @@ sudo gpasswd -a $USER docker
 sudo systemctl restart docker
 
 # other tools
-sudo dnf -y install htop
+sudo dnf -y install htop nitrogen fontawesome-fonts
