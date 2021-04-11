@@ -21,5 +21,8 @@ sudo groupadd docker
 sudo gpasswd -a $USER docker
 sudo systemctl restart docker
 
+# wm environment
+sudo dnf -y install rofi feh fontawesome-fonts
+
 # other tools
-sudo dnf -y install htop nitrogen fontawesome-fonts
+sudo dnf -y install htop
