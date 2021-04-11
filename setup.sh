@@ -5,8 +5,8 @@ sudo dnf -y install fish
 curl -L https://get.oh-my.fish | fish
 omf install eden
 
-# x11 headers
-sudo dnf -y install libX11-devel
+# x headers
+sudo dnf -y install libX11-devel libXft-devel
 
 # vim
 sudo dnf -y install vim
