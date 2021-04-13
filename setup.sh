@@ -9,8 +9,8 @@ omf install eden
 sudo dnf -y install libX11-devel libXft-devel
 
 # file manager
-git clone https://github.com/ranger/ranger
-cd ranger && sudo make install && cd ..
+git clone https://github.com/ranger/ranger .ranger
+cd .ranger && sudo make install && cd ..
 
 # vim
 sudo dnf -y install vim
