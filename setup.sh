@@ -6,7 +6,7 @@ curl -L https://get.oh-my.fish | fish
 omf install eden
 
 # x headers
-sudo dnf -y install libX11-devel libXft-devel
+sudo dnf -y install libX11-devel libXft-devel libXinerama-devel
 
 # file manager
 git clone https://github.com/ranger/ranger .ranger
