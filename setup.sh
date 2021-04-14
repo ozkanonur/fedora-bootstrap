@@ -29,4 +29,4 @@ sudo systemctl restart docker
 sudo dnf -y install rofi feh fontawesome-fonts
 
 # other tools
-sudo dnf -y install htop
+sudo dnf -y install htop tlp-rdw
