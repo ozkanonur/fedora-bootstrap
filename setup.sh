@@ -8,6 +8,8 @@ omf install eden
 # x headers
 sudo dnf -y install libX11-devel libXft-devel libXinerama-devel
 
+sudo dnf -y install @base-x xterm
+
 # file manager
 git clone https://github.com/ranger/ranger .ranger
 cd .ranger && sudo make install && cd ..
