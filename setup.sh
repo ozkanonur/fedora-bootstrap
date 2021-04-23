@@ -8,7 +8,7 @@ dnf -y install libX11-devel libXft-devel libXinerama-devel
 
 # file manager
 git clone https://github.com/ranger/ranger
-cd ranger && sudo make install && cd ..
+cd ranger && make install && cd ..
 
 # text editors
 dnf -y install vim leafpad
