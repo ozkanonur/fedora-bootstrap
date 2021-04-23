@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# zsh
+dnf -y install zsh
+
 # browsers
 dnf -y install chromium
 
