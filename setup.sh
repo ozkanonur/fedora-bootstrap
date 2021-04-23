@@ -20,7 +20,7 @@ dnf -y install brightnessctl rofi xrandr feh htop tlp
 grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
 firewall-cmd --permanent --zone=trusted --add-interface=docker0
 firewall-cmd --permanent --zone=FedoraWorkstation --add-masquerade
-dnf install moby-engine docker-compose
+dnf -y install moby-engine docker-compose
 systemctl enable docker
 groupadd docker
 gpasswd -a $USER docker
