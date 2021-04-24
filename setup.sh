@@ -17,7 +17,7 @@ cd ranger && make install && cd ..
 dnf -y install vim leafpad
 
 # tools
-dnf -y install brightnessctl rofi xrandr feh htop tlp tlp-rdw
+dnf -y install brightnessctl xrandr feh htop tlp tlp-rdw
 
 # docker
 grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
