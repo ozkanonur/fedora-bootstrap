@@ -3,8 +3,8 @@
 # zsh
 dnf -y install zsh
 
-# browsers
-dnf -y install chromium
+# browser, mail client
+dnf -y install chromium sylpheed
 
 # x11
 dnf -y install libX11-devel libXft-devel libXinerama-devel
