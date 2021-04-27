@@ -16,8 +16,11 @@ cd ranger && make install && cd ..
 # text editors
 dnf -y install vim leafpad
 
-# tools
-dnf -y install brightnessctl xrandr feh htop tlp tlp-rdw
+# necessary tools
+dnf -y install xrandr tlp tlp-rdw brightnessctl flameshot feh
+
+# other
+dnf -y install htop
 
 # docker
 grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
