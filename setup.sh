@@ -3,9 +3,6 @@
 # zsh
 dnf -y install zsh
 
-# browser, mail client
-dnf -y install chromium sylpheed
-
 # x11
 dnf -y install libX11-devel libXft-devel libXinerama-devel
 
@@ -18,6 +15,14 @@ dnf -y install vim leafpad
 
 # necessary tools
 dnf -y install xrandr tlp tlp-rdw brightnessctl flameshot feh
+
+# snapd
+dnf install snapd
+ln -s /var/lib/snapd/snap /snap
+
+# browser, spotify, mail client
+snap install chromium && snap install spotify
+dnf -y install sylpheed
 
 # other
 dnf -y install htop
