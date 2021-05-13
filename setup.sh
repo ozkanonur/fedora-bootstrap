@@ -14,7 +14,7 @@ cd ranger && make install && cd ..
 dnf -y install vim leafpad
 
 # necessary tools
-dnf -y install xrandr tlp tlp-rdw brightnessctl flameshot feh
+dnf -y install xrandr tlp tlp-rdw brightnessctl flameshot feh setxkbmap
 
 # snapd
 dnf install snapd
