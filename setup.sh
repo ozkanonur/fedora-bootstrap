@@ -6,10 +6,6 @@ dnf -y install zsh
 # x11
 dnf -y install libX11-devel libXft-devel libXinerama-devel
 
-# file manager
-git clone https://github.com/jarun/nnn
-cd nnn && make O_NERD=1 && cp ./nnn /bin/ && cd ..
-
 # text editors
 dnf -y install vim leafpad
 
@@ -26,6 +22,10 @@ dnf -y install sylpheed
 
 # other
 dnf -y install htop gdouros-symbola-fonts readline-devel
+
+# file manager
+git clone https://github.com/jarun/nnn
+cd nnn && make O_NERD=1 && cp ./nnn /bin/ && cd ..
 
 # docker
 grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
