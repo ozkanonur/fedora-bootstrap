@@ -24,7 +24,7 @@ dnf -y install sylpheed
 dnf install rust cargo
 
 # other
-dnf -y install htop gdouros-symbola-fonts readline-devel
+dnf -y install htop gdouros-symbola-fonts readline-devel fzf
 
 # file manager
 git clone https://github.com/jarun/nnn
