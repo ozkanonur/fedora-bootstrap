@@ -24,12 +24,11 @@ dnf -y install sylpheed
 dnf install rust cargo
 
 # other
-dnf -y install htop gdouros-symbola-fonts readline-devel fzf
+dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux
 
 # file manager
 git clone https://github.com/jarun/nnn
-cd nnn && make O_NERD=1 && cp ./nnn /bin/ && cd ..
-curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
+cd nnn && make O_NERD=1 && cp ./nnn /bin/ && ./plugins/getplugs && cd ..
 
 # docker
 grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
