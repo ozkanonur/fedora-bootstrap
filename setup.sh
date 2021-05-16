@@ -25,7 +25,7 @@ snap install chromium && snap install spotify
 dnf -y install sylpheed
 
 # other
-dnf -y install htop w3m-img
+dnf -y install htop gdouros-symbola-fonts
 
 # docker
 grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
