@@ -7,8 +7,8 @@ dnf -y install zsh
 dnf -y install libX11-devel libXft-devel libXinerama-devel
 
 # file manager
-git clone https://github.com/ranger/ranger
-cd ranger && make install && cd ..
+git clone https://github.com/jarun/nnn
+cd nnn && make O_NERD=1 && cp ./nnn /bin/ && cd ..
 
 # text editors
 dnf -y install vim leafpad
