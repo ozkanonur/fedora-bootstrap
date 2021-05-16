@@ -20,8 +20,11 @@ ln -s /var/lib/snapd/snap /snap
 snap install chromium && snap install spotify
 dnf -y install sylpheed
 
+# rust
+dnf install rust cargo
+
 # other
-dnf -y install htop gdouros-symbola-fonts readline-devel sxiv
+dnf -y install htop gdouros-symbola-fonts readline-devel
 
 # file manager
 git clone https://github.com/jarun/nnn
