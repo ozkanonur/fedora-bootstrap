@@ -21,7 +21,7 @@ snap install chromium && snap install spotify
 dnf -y install sylpheed
 
 # other
-dnf -y install htop gdouros-symbola-fonts readline-devel
+dnf -y install htop gdouros-symbola-fonts readline-devel sxiv
 
 # file manager
 git clone https://github.com/jarun/nnn
