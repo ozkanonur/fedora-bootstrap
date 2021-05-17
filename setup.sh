@@ -25,6 +25,7 @@ dnf install rust cargo
 
 # other
 dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux
+cargo install viu
 
 # file manager
 git clone https://github.com/jarun/nnn
