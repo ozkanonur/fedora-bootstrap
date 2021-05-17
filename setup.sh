@@ -24,7 +24,7 @@ dnf -y install sylpheed
 dnf install rust cargo
 
 # other
-dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux
+dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux simplescreenrecorder
 cargo install viu
 
 # file manager
