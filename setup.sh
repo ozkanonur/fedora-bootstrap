@@ -30,13 +30,3 @@ cargo install viu
 # file manager
 git clone https://github.com/jarun/nnn
 cd nnn && make O_NERD=1 && cp ./nnn /bin/ && ./plugins/getplugs && cd ..
-
-# docker
-grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
-firewall-cmd --permanent --zone=trusted --add-interface=docker0
-firewall-cmd --permanent --zone=FedoraWorkstation --add-masquerade
-dnf -y install moby-engine docker-compose
-systemctl enable docker
-groupadd docker
-gpasswd -a $USER docker
-systemctl enable docker
