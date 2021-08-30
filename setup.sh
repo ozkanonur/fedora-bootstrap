@@ -4,7 +4,7 @@
 dnf -y install zsh
 
 # x11
-dnf -y install libX11-devel libXft-devel libXinerama-devel
+dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi-devel
 
 # text editors
 dnf -y install vim leafpad
