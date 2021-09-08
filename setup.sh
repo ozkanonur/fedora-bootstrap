@@ -16,9 +16,8 @@ dnf -y install xrandr xcompmgr xset xcompmgr imlib2-devel NetworkManager-tui tlp
 dnf install snapd
 ln -s /var/lib/snapd/snap /snap
 
-# browser, spotify, mail client
-snap install chromium && snap install spotify
-dnf -y install sylpheed
+# browser, spotify, and k8s client
+snap install chromium && snap install spotify && snap install kontena-lens --classic
 
 # rust
 dnf install rust cargo
