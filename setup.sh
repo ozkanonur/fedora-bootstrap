@@ -10,7 +10,7 @@ dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi
 dnf -y install vim leafpad
 
 # necessary tools
-dnf -y install xrandr xcompmgr xset xcompmgr imlib2-devel NetworkManager-tui tlp tlp-rdw brightnessctl pulseaudio-utils valgrind freerdp flameshot feh setxkbmap openvpn
+dnf -y install xrandr xcompmgr xset xcompmgr imlib2-devel NetworkManager-tui tlp tlp-rdw pulseaudio-utils ripgrep brightnessctl valgrind freerdp flameshot feh setxkbmap openvpn
 
 # snapd
 dnf install snapd
