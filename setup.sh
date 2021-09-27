@@ -4,13 +4,25 @@
 dnf -y install zsh
 
 # x11
-dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi-devel
+dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi-devel libX11-xcb libXext-devel
+
+# necessary tools
+dnf -y install gcc git xrandr xcompmgr xset xcompmgr imlib2-devel NetworkManager-tui tlp tlp-rdw \
+	pulseaudio-utils ripgrep brightnessctl valgrind freerdp flameshot feh setxkbmap \
+	openvpn dbus-devel libconfig-devel libdrm-devel libev-devel libxcb-devel mesa-libGL-devel \
+	meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel
+
+# compositor
+git clone https://github.com/ibhagwan/picom
+cd picom && \
+	git submodule update --init --recursive && \
+	meson --buildtype=release . build && \
+	ninja -C build && \
+	ninja -C build install && \
+	cd ~
 
 # text editors
 dnf -y install vim leafpad
-
-# necessary tools
-dnf -y install xrandr xcompmgr xset xcompmgr imlib2-devel NetworkManager-tui tlp tlp-rdw pulseaudio-utils ripgrep brightnessctl valgrind freerdp flameshot feh setxkbmap openvpn
 
 # snapd
 dnf install snapd
