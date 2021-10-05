@@ -13,7 +13,7 @@ dnf -y install gcc git xrandr xset imlib2-devel NetworkManager-tui tlp tlp-rdw \
 	meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel
 
 # development tools
-dnf -y install ccls vim
+dnf -y install ccls vim golang-x-tools-gopls
 
 # compositor
 git clone https://github.com/ibhagwan/picom
