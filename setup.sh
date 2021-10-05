@@ -1,13 +1,13 @@
 #!/bin/sh
 
 # zsh
-dnf -y install zsh
+sudo dnf -y install zsh
 
 # x11
-dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi-devel libX11-xcb libXext-devel
+sudo dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi-devel libX11-xcb libXext-devel
 
 # necessary tools
-dnf -y install gcc git xrandr xset imlib2-devel NetworkManager-tui tlp tlp-rdw \
+sudo dnf -y install gcc git xrandr xset imlib2-devel NetworkManager-tui tlp tlp-rdw \
 	pulseaudio-utils ripgrep brightnessctl valgrind freerdp flameshot feh setxkbmap \
 	openvpn dbus-devel libconfig-devel libdrm-devel libev-devel libxcb-devel mesa-libGL-devel \
 	meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel
@@ -19,11 +19,11 @@ curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/
 chmod +x ~/.local/bin/rust-analyzer
 
 # nodejs
-dnf install nodejs
+sudo dnf install nodejs
 
 # development tools
-dnf -y install ccls vim golang-x-tools-gopls
-npm install --global pyright
+sudo dnf -y install ccls vim golang-x-tools-gopls
+sudo npm install --global pyright
 
 # omnisharp
 curl -L https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.37.16/omnisharp-linux-x64.zip > ~/omnisharp.zip
@@ -37,20 +37,25 @@ cd picom && \
 	git submodule update --init --recursive && \
 	meson --buildtype=release . build && \
 	ninja -C build && \
-	ninja -C build install && \
-	cd ~
+	sudo ninja -C build install && \
+	cd ..
+rm -rf picom
 
 # snapd
-dnf install snapd
+sudo dnf install snapd
 ln -s /var/lib/snapd/snap /snap
 
 # browser, spotify, and k8s client
-snap install chromium && snap install spotify && snap install kontena-lens --classic
+sudo snap install chromium && snap install spotify && snap install kontena-lens --classic
 
 # other
-dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux simplescreenrecorder leafpad
+sudo dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux simplescreenrecorder leafpad
 cargo install viu
 
 # file manager
 git clone https://github.com/jarun/nnn
-cd nnn && make O_NERD=1 && cp ./nnn /bin/ && ./plugins/getplugs && cd ..
+cd nnn && make O_NERD=1 && \
+	sudo cp ./nnn /bin/ && \
+	./plugins/getplugs && \
+	cd ..
+rm -rf nnn
