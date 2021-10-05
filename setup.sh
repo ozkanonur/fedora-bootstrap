@@ -12,6 +12,9 @@ dnf -y install gcc git xrandr xset imlib2-devel NetworkManager-tui tlp tlp-rdw \
 	openvpn dbus-devel libconfig-devel libdrm-devel libev-devel libxcb-devel mesa-libGL-devel \
 	meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel
 
+# development tools
+dnf -y install ccls vim
+
 # compositor
 git clone https://github.com/ibhagwan/picom
 cd picom && \
@@ -20,9 +23,6 @@ cd picom && \
 	ninja -C build && \
 	ninja -C build install && \
 	cd ~
-
-# text editors
-dnf -y install vim leafpad
 
 # snapd
 dnf install snapd
@@ -35,7 +35,7 @@ snap install chromium && snap install spotify && snap install kontena-lens --cla
 dnf install rust cargo
 
 # other
-dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux simplescreenrecorder
+dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux simplescreenrecorder leafpad
 cargo install viu
 
 # file manager
