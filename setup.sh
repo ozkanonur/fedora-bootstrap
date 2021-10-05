@@ -32,7 +32,10 @@ ln -s /var/lib/snapd/snap /snap
 snap install chromium && snap install spotify && snap install kontena-lens --classic
 
 # rust
-dnf install rust cargo
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+rustup component add rust-src
+curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
+chmod +x ~/.local/bin/rust-analyzer
 
 # other
 dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux simplescreenrecorder leafpad
