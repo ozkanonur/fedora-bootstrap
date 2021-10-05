@@ -25,6 +25,12 @@ dnf install nodejs
 dnf -y install ccls vim golang-x-tools-gopls
 npm install --global pyright
 
+# omnisharp
+curl -L https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.37.16/omnisharp-linux-x64.zip > ~/omnisharp.zip
+unzip ~/omnisharp.zip -d ~/.omnisharp
+chmod +x ~/.omnisharp/run
+rm ~/omnisharp.zip
+
 # compositor
 git clone https://github.com/ibhagwan/picom
 cd picom && \
