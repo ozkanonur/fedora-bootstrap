@@ -22,7 +22,7 @@ chmod +x ~/.local/bin/rust-analyzer
 sudo dnf install nodejs
 
 # development tools
-sudo dnf -y install ccls vim golang-x-tools-gopls
+sudo dnf -y install vim neovim ccls golang-x-tools-gopls
 sudo npm install --global pyright
 
 # omnisharp
