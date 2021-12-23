@@ -4,7 +4,7 @@
 sudo dnf -y install zsh
 
 # x11
-sudo dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi-devel libX11-xcb libXext-devel
+sudo dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi-devel libX11-xcb libXext-devel lzop
 
 # necessary tools
 sudo dnf -y install gcc git xrandr xset imlib2-devel NetworkManager-tui tlp tlp-rdw thermald \
