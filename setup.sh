@@ -4,13 +4,16 @@
 sudo dnf -y install zsh
 
 # x11
-sudo dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi-devel libX11-xcb libXext-devel lzop
+sudo dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel libXi-devel libX11-xcb libXext-devel
+
+# kernel
+sudo dnf -y install kernel-devel kernel-headers
 
 # necessary tools
 sudo dnf -y install gcc git xrandr xset imlib2-devel NetworkManager-tui tlp tlp-rdw thermald \
 	pulseaudio-utils ripgrep brightnessctl valgrind freerdp flameshot feh setxkbmap \
 	openvpn dbus-devel libconfig-devel libdrm-devel libev-devel libxcb-devel mesa-libGL-devel \
-	meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel
+	meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel lzop
 
 # rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
