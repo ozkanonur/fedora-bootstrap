@@ -22,7 +22,7 @@ curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/
 chmod +x ~/.local/bin/rust-analyzer
 
 # nodejs
-sudo dnf install nodejs
+sudo dnf -y install nodejs
 
 # development tools
 sudo dnf -y install vim neovim ccls golang-x-tools-gopls
