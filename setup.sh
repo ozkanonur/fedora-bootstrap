@@ -13,7 +13,7 @@ sudo dnf -y install kernel-devel kernel-headers
 sudo dnf -y install gcc git xrandr xset imlib2-devel NetworkManager-tui tlp tlp-rdw thermald \
 	pulseaudio-utils ripgrep brightnessctl valgrind freerdp flameshot feh setxkbmap \
 	openvpn dbus-devel libconfig-devel libdrm-devel libev-devel libxcb-devel mesa-libGL-devel \
-	meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel lzop
+	meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel lzop readline-devel
 
 # rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
@@ -45,14 +45,14 @@ cd picom && \
 rm -rf picom
 
 # snapd
-sudo dnf install snapd
-ln -s /var/lib/snapd/snap /snap
+sudo dnf -y install snapd
+sudo ln -s /var/lib/snapd/snap /snap
 
 # browser, spotify, and k8s client
 sudo snap install chromium && snap install spotify && snap install kontena-lens --classic
 
 # other
-sudo dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux simplescreenrecorder leafpad
+sudo dnf -y install htop gdouros-symbola-fonts readline-devel fzf tmux leafpad
 cargo install viu
 
 # file manager
