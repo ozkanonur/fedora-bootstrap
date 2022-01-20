@@ -49,10 +49,10 @@ sudo dnf -y install snapd
 sudo ln -s /var/lib/snapd/snap /snap
 
 # browser, spotify, and k8s client
-sudo snap install chromium && snap install spotify && snap install kontena-lens --classic
+sudo snap install spotify && snap install kontena-lens --classic
 
 # other
-sudo dnf -y install htop gdouros-symbola-fonts fzf tmux leafpad
+sudo dnf -y install chromium htop gdouros-symbola-fonts fzf tmux leafpad
 cargo install viu
 
 # file manager
