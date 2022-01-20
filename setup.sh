@@ -52,7 +52,7 @@ sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install spotify && snap install kontena-lens --classic
 
 # other
-sudo dnf -y install chromium htop gdouros-symbola-fonts fzf tmux leafpad
+sudo dnf -y install qutebrowser htop gdouros-symbola-fonts fzf tmux leafpad
 cargo install viu
 
 # file manager
