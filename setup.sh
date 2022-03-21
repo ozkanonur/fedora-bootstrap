@@ -4,6 +4,12 @@
 mkdir devspace
 mkdir -p pictures/screenshots
 
+# enable rpmfusion
+sudo dnf -y install \
+  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install \
+  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 # zsh
 sudo dnf -y install zsh
 
@@ -52,17 +58,12 @@ rm -rf picom
 sudo dnf -y install snapd
 sudo ln -s /var/lib/snapd/snap /snap
 
-# browser, spotify, and k8s client
-sudo snap install spotify && snap install kontena-lens --classic
+# browser
+sudo dnf -y install qutebrowser qt5-qtwebengine-freeworld
+
+# spotify
+sudo snap install spotify && snap install --classic
 
 # other
-sudo dnf -y install qutebrowser htop gdouros-symbola-fonts fzf tmux leafpad
+sudo dnf -y installhtop gdouros-symbola-fonts fzf tmux leafpad
 cargo install viu
-
-# file manager
-git clone https://github.com/jarun/nnn
-cd nnn && make O_NERD=1 && \
-	sudo cp ./nnn /bin/ && \
-	./plugins/getplugs && \
-	cd ..
-rm -rf nnn
