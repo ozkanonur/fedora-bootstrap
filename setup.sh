@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# directories
+mkdir devspace
+mkdir -p pictures/screenshots
+
 # zsh
 sudo dnf -y install zsh
 
