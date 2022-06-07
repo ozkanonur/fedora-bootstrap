@@ -20,7 +20,7 @@ sudo dnf -y install libX11-devel libXft-devel libXinerama-devel libXrandr-devel 
 sudo dnf -y install kernel-devel kernel-headers
 
 # necessary tools
-sudo dnf -y install doas gcc xdg-utils git xrandr xset imlib2-devel NetworkManager-tui tlp tlp-rdw \
+sudo dnf -y install doas gcc xdg-utils xclip git xrandr xset imlib2-devel NetworkManager-tui tlp tlp-rdw \
 	pulseaudio-utils ripgrep brightnessctl valgrind freerdp flameshot setxkbmap \
 	openvpn dbus-devel libconfig-devel libdrm-devel libev-devel libxcb-devel mesa-libGL-devel \
 	meson pcre-devel pixman-devel uthash-devel xcb-util-image-devel xcb-util-renderutil-devel xorg-x11-proto-devel lzop readline-devel cmake
