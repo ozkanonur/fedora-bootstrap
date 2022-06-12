@@ -65,5 +65,5 @@ sudo dnf -y install qutebrowser qt5-qtwebengine-freeworld
 sudo snap install spotify && snap install --classic
 
 # other
-sudo dnf -y installhtop gdouros-symbola-fonts fzf tmux leafpad
+sudo dnf -y install htop gdouros-symbola-fonts fzf tmux leafpad
 cargo install viu
