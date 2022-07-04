@@ -67,3 +67,4 @@ sudo snap install spotify && snap install --classic
 # other
 sudo dnf -y install htop gdouros-symbola-fonts fzf tmux leafpad
 cargo install viu
+cargo install tree-sitter-cli
